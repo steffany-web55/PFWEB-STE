@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+</head>
+<body>
+    <h1>Página de cadastro</h1>
+    <form action="Telaprincipal.html">
+        <label for="cadastro-nome">Nome:</label>
+        <input type="text" name="nome" id="cadastro-nome" required><br><br>
+
+        <label>Sexo</label>
+        <input type="radio" name="sexo" id="cadastro-sexo-m" value="M" required>
+        <label for="cadastro-sexo-m">Masculino</label>
+        <input type="radio" name="sexo" id="cadastro-sexo-f" value="F" required>
+        <label for="cadastro-sexo-f">Feminino</label><br><br>
+
+        <label for="cad-obs">Observações:</label>
+        <textarea name="observações" id="cad-obs" cols="40" rows="4"></textarea><br><br>
+
+        <label for="cadastro-de-email">Email:</label>
+        <input type="email" name="email" id="cadastro-de-email" required><br><br>
+
+        <label for="cadastro-de-senha">Senha</label>
+        <input type="password" name="senha" id="cadastro-de-senha" pattern="(?=.*\d)(?=.*[a-zA-Z]).{6,}" title="Sua senha deve conter letras, números e no minimo 6 caracteres" required><br><br>
+
+        <label for="cadastro-confirmar-senha">Confirmar Senha:</label>
+        <input type="password" name="confirma_senha" id="cadastro-confirmar-senha" required><br><br>
+
+        <button type="submit" id="Button-cadastro-enviar">Enviar</button>
+        <button type="reset" id="Button-cadastro-limpar">Limpar</button>
+    </form>
+</body>
+</html>
