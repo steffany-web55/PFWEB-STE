@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Finalizar Compra</title>
+</head>
+<body>
+    <header id="cabecalho-compra">
+        <a id="link-compra-logo" href="produtos.html">
+            <img id="img-compra-logo" src="imagens/1790202628405.jpg" alt="Logotipo" width="100" height="40">
+        </a>
+        <nav style="display:inline; margin-left: 20px;">
+            <a id="link-compra-sobre" href="sobre.html">Sobre</a> | 
+            <a id="link-compra-sair" href="Telaprincipal.html">Sair</a>
+        </nav>
+        <span style="float: right;">
+            <a id="link-compra-carrinho" href="finalizarCompra.html">
+                <img id="img-compra-carrinho" src="imagens/1790263717539.jpg" alt="Carrinho" width="40" height="40">
+            </a>
+        </span>
+    </header>
+    <hr>
+
+    <h2>Carrinho de Compras</h2>
+    <table id="tabela-itens-compra" border="1" cellpadding="8">
+        <caption>Resumo do Pedido</caption>
+        <tr>
+            <th>Item</th>
+            <th>Produto</th>
+            <th>Qtd</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Vestido envelope verde menta de alcinha e fenda lateral</td>
+            <td>2</td>
+            <td>R$ 150 </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Colete Alfaiataria Alongado Sem Mangas com Amarração</td>
+            <td>1</td>
+            <td>R$ 220 </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right"><strong>Total:</strong></td>
+            <td><strong>R$ 370</strong></td>
+        </tr>
+    </table>
+    <br>
+
+    <form id="form-concluir-compra" action="produtos.html" method="get" onsubmit="alert('Compra realizada com sucesso!');">
+        <button type="submit" id="btn-finalizar-pedido">Finalizar Compra</button>
+    </form>
+</body>
+</html>
